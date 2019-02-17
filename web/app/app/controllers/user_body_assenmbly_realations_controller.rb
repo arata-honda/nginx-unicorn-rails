@@ -1,0 +1,2 @@
+class UserBodyAssenmblyRealationsController < ApplicationController
+end

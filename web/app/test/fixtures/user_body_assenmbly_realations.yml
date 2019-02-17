@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  weight: 1.5
+  bmi: 1.5
+  fat: 1.5
+  measurement_time: 2019-02-11 03:03:06
+
+two:
+  user_id: MyString
+  weight: 1.5
+  bmi: 1.5
+  fat: 1.5
+  measurement_time: 2019-02-11 03:03:06

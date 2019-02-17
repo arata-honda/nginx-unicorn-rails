@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  name: MyString
+  height: 1.5
+  goal_weight: 1.5
+  goal_bmi: 1.5
+  goal_body_fat: 1.5
+
+two:
+  user_id: MyString
+  name: MyString
+  height: 1.5
+  goal_weight: 1.5
+  goal_bmi: 1.5
+  goal_body_fat: 1.5
