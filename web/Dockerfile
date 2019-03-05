@@ -24,3 +24,7 @@ RUN \
 bundle install
 
 ADD ./app ${APP_ROOT}
+
+# 単体実行用
+#CMD ["/app/bin/bundle", "exec", "rails", "server", "-p", "3000", "-b", "'0.0.0.0'"]
+

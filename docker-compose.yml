@@ -19,5 +19,7 @@ services:
       - ./web/app:/app
     environment:
       RAILS_ENV: development
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: pass
     depends_on:
       - db
