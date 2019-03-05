@@ -24,3 +24,4 @@ RUN \
 bundle install
 
 ADD ./app ${APP_ROOT}
+
