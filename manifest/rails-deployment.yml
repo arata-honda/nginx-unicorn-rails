@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weightapp-rails
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: rails
+  template:
+    metadata:
+      labels:
+        app: rails
+    spec:
+      volumes:
+      - name: rails-app-volume
+        hostPath:
+          path: "/Users/richter/develop/docker/hody_sample/nginx-unicorn-rails/web/app"
+      containers:
+        - name: rails-container
+          image: "hondy/rails:1.4"
+          imagePullPolicy: IfNotPresent
+          envFrom:
+          - secretRef:
+              name: mysql-auth
+          command: ["bundle"]
+          args: ["exec", "rails", "server", "-b", "0.0.0.0"]
+          ports:
+            - containerPort: 3000
+          volumeMounts:
+            - name: rails-app-volume
+              mountPath: /app
